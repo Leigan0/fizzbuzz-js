@@ -27,3 +27,12 @@ FizzBuzz.prototype.says = function(number) {
     return number
   }
 };
+
+// To print numbers 1 - 100 using this function
+var i = 0
+fizzbuzz = new FizzBuzz();
+
+while (i < 101) {
+  console.log(fizzbuzz.says(i));
+  i++;
+}
