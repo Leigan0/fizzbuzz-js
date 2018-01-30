@@ -5,24 +5,24 @@ describe("FizzBuzz", function() {
 
   describe('knows when a number is', function(){
     it("divisible by three",function() {
-      expect(fizzbuzz.isDivisibleByThree(3)).toBe(true);
+      expect(fizzbuzz._isDivisibleBy(3,3)).toBe(true);
     });
     it("divisible by five", function(){
-      expect(fizzbuzz.isDivisibleByFive(5)).toBe(true);
+      expect(fizzbuzz._isDivisibleBy(5,10)).toBe(true);
     });
     it('divisible by three & five',function(){
-      expect(fizzbuzz.isDivisibleByFifteen(15)).toBe(true);
+      expect(fizzbuzz._isDivisibleBy(15,30)).toBe(true);
     });
   });
   describe('it knows when a number is NOT', function(){
     it('divisible by three', function(){
-      expect(fizzbuzz.isDivisibleByThree(1)).toBe(false);
+      expect(fizzbuzz._isDivisibleBy(3,1)).toBe(false);
     });
     it('divisible by five', function(){
-      expect(fizzbuzz.isDivisibleByFive(1)).toBe(false);
+      expect(fizzbuzz._isDivisibleBy(5,1)).toBe(false);
     });
     it('divisible by three & five',function(){
-      expect(fizzbuzz.isDivisibleByFifteen(1)).toBe(false);
+      expect(fizzbuzz._isDivisibleBy(15,1)).toBe(false);
     });
   });
   describe('when playing, it says', function(){
